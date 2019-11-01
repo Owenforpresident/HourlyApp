@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';
-import Clockin from './components/clock/Clockin';
 import Clock from './components/clock/Clock';
 import Header from './components/layout/Header';
 import About from './components/pages/About';
@@ -17,9 +16,8 @@ class App extends Component {
           <div className="App">
             <Header branding="ByTheHour" />
             <div className="container">
-              <Clock/>
               <Switch>
-                <Route exact path="/" component={Clockin} />
+                <Route exact path="/" component={Clock} />
                 <Route exact path="/about" component={About} />
                 <Route component={NotFound} />
               </Switch>

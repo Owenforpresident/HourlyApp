@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Clockin from "./Clockin"
 
 export default class Clock extends Component {
     constructor(props){
@@ -23,8 +24,11 @@ export default class Clock extends Component {
       }
     render() {
         return (
-            <h1 style={{ display: 'flex',  alignItems: 'center', justifyContent: 'center', padding:20, marginTop:250}}>
-                 The time is {this.state.time} </h1>
+          <div> <h1 style={{ display: 'flex',  alignItems: 'center', justifyContent: 'center', padding:20, marginTop:250}}>
+          The time is {this.state.time} 
+          <Clockin {...this.state} />
+          </h1></div>
+           
         )
     };
 }
