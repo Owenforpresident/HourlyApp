@@ -9,18 +9,30 @@ class Buttons extends Component {
        super(props);
       this.handleClockinClick = this.handleClockinClick.bind(this)
      this.handleClockoutClick = this.handleClockoutClick.bind(this)
-    this.state = {isClockedIn: false}
-    }
-  
-    handleClockinClick(){
-      this.setState({isClockedIn: true})
-      console.log(this.props)
-    }
-  
-    handleClockoutClick(){
-      this.setState({isClockedIn: false})
-    }
+    this.state = {isClockedIn: false,
+    clockedintime: '',
+    clockedouttime: ''
+    }}
 
+    async handleClockinClick(){
+
+     await  this.setState({
+        isClockedIn: !this.state.isClockedIn, 
+        clockedintime: new Date().toLocaleTimeString()
+      })
+      console.log(this.state)
+      }
+      
+  
+    async handleClockoutClick(){
+      
+          await  this.setState({
+           isClockedIn: !this.state.isClockedIn,
+           clockedouttime: new Date().toLocaleTimeString()
+          })
+           console.log(this.state)
+          }
+    
     render(){ 
       const isClockedIn = this.state.isClockedIn
       let button
@@ -28,15 +40,14 @@ class Buttons extends Component {
         button = <ClockoutButton onClick= {this.handleClockoutClick}/>
       } else {
         button = <ClockinButton onClick = {this.handleClockinClick}/>}
-
-
       return (
         <div>
         {button}
         </div>
-      )
+      )}
     } 
-  } 
+  
+  
 
 
 export default Buttons;

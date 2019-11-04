@@ -5,7 +5,9 @@ export default class Clock extends Component {
     constructor(props){
         super(props);
     this.state= { 
-        time: new Date().toLocaleTimeString()
+        time: new Date().toLocaleTimeString(),
+        Clockintime: {},
+        Clockouttime: {}
     };
     }
     componentDidMount() {
@@ -22,13 +24,14 @@ export default class Clock extends Component {
           time: new Date().toLocaleTimeString()
         });
       }
+     
     render() {
         return (
           <div> <h1 style={{ display: 'flex',  alignItems: 'center', justifyContent: 'center', padding:20, marginTop:250}}>
           The time is {this.state.time} 
           </h1>
-          <Buttons {...this.state}/>
+          <Buttons />
           </div>
         )
-    };
+    }
 }
