@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Table } from 'reactstrap';
 
-
 export default class DisplayHours extends Component {
   render() {
       return (
@@ -18,24 +17,10 @@ export default class DisplayHours extends Component {
           <tbody>
             <tr>
               <th scope="row">1</th>
-              <td>fuckoff</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Larry</td>
-              <td>the Bird</td>
-              <td>@twitter</td>
-              <td>@mdo</td>
+              <td>{this.props.clockedintime}</td>
+              <td>{this.props.clockedouttime}</td>
+              <td>{this.props.hours}</td>
+              <td></td>
             </tr>
           </tbody>
         </Table>
