@@ -11,8 +11,8 @@ constructor(props) {
   this.state = {isClockedIn: false,
                 clockedintime: '',
                 clockedouttime: '',
-                date: new Date(),
-                hours:[]}
+                hours:[], 
+              }
   }
 
 timeStringToFloat = (time) => {
