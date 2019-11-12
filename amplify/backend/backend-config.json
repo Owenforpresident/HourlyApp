@@ -1,0 +1,9 @@
+{
+	"auth": {
+		"hourlyapp7b9820f6": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": []
+		}
+	}
+}

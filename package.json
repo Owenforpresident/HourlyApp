@@ -2,8 +2,10 @@
   "name": "contactmanager",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Owenforpresident.github.io/RoledexAppFrontend",
+  "homepage": "https://Owenforpresident.github.io/HourlyApp",
   "dependencies": {
+    "aws-amplify": "^1.2.4",
+    "aws-amplify-react": "^2.5.4",
     "axios": "^0.18.1",
     "bootstrap": "^4.3.1",
     "classnames": "^2.2.6",

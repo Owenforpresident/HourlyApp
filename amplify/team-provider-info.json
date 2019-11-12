@@ -1,0 +1,19 @@
+{
+    "hourlyenv": {
+        "awscloudformation": {
+            "AuthRoleName": "hourlyapp-hourlyenv-20191110201428-authRole",
+            "UnauthRoleArn": "arn:aws:iam::983614135010:role/hourlyapp-hourlyenv-20191110201428-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::983614135010:role/hourlyapp-hourlyenv-20191110201428-authRole",
+            "Region": "eu-west-1",
+            "DeploymentBucketName": "hourlyapp-hourlyenv-20191110201428-deployment",
+            "UnauthRoleName": "hourlyapp-hourlyenv-20191110201428-unauthRole",
+            "StackName": "hourlyapp-hourlyenv-20191110201428",
+            "StackId": "arn:aws:cloudformation:eu-west-1:983614135010:stack/hourlyapp-hourlyenv-20191110201428/b4898150-03f6-11ea-82e4-0a0272c6a610"
+        },
+        "categories": {
+            "auth": {
+                "hourlyapp7b9820f6": {}
+            }
+        }
+    }
+}
